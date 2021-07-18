@@ -1,0 +1,42 @@
+﻿@model KnewinEventAspNetMvc5.Web.Models.CALENDARIO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CALENDARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ATIVO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ATIVO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EQUIPE.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EQUIPE.NOME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.COD_CALENDARIO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
