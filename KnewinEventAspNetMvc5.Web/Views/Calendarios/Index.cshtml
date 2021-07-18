@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<KnewinEventAspNetMvc5.Web.Models.CALENDARIO>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Calendários";
 }
 
-<h2>Index</h2>
+<h2>Calendários</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Incluir Novo", "Create", null, new { @class = "btn btn-primary btn-sm" })
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.EQUIPE.NOME)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.COD_CALENDARIO }) |
-            @Html.ActionLink("Details", "Details", new { id=item.COD_CALENDARIO }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.COD_CALENDARIO })
+            @Html.ActionLink("Alterar", "Edit", new { id=item.COD_CALENDARIO }, new { @class = "btn btn-primary btn-sm" })
+            @Html.ActionLink("Vizualizar", "Details", new { id=item.COD_CALENDARIO }, new { @class = "btn btn-info btn-sm" })
+            @Html.ActionLink("Remover", "Delete", new { id=item.COD_CALENDARIO }, new { @class = "btn btn-danger btn-sm" })
         </td>
     </tr>
 }

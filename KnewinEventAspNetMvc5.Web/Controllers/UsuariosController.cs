@@ -48,17 +48,18 @@ namespace KnewinEventAspNetMvc5.Web.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "COD_USUARIO,NOME,APELIDO,SETOR,DDD,TELEFONE,COD_EQUIPE")] USUARIO uSUARIO)
+        public ActionResult Create(USUARIO usuario)
         {
             if (ModelState.IsValid)
             {
-                db.USUARIO.Add(uSUARIO);
+                usuario.COD_USUARIO = db.USUARIO.Max(x => x.COD_USUARIO) + 1;
+                db.USUARIO.Add(usuario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.COD_EQUIPE = new SelectList(db.EQUIPE, "COD_EQUIPE", "NOME", uSUARIO.COD_EQUIPE);
-            return View(uSUARIO);
+            ViewBag.COD_EQUIPE = new SelectList(db.EQUIPE, "COD_EQUIPE", "NOME", usuario.COD_EQUIPE);
+            return View(usuario);
         }
 
         // GET: Usuarios/Edit/5

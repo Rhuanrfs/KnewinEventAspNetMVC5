@@ -48,17 +48,18 @@ namespace KnewinEventAspNetMvc5.Web.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "COD_CALENDARIO,NOME,ATIVO,COD_EQUIPE")] CALENDARIO cALENDARIO)
+        public ActionResult Create(CALENDARIO calendario)
         {
             if (ModelState.IsValid)
             {
-                db.CALENDARIO.Add(cALENDARIO);
+                calendario.COD_CALENDARIO = db.CALENDARIO.Max(x => x.COD_CALENDARIO) + 1;
+                db.CALENDARIO.Add(calendario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.COD_EQUIPE = new SelectList(db.EQUIPE, "COD_EQUIPE", "NOME", cALENDARIO.COD_EQUIPE);
-            return View(cALENDARIO);
+            ViewBag.COD_EQUIPE = new SelectList(db.EQUIPE, "COD_EQUIPE", "NOME", calendario.COD_EQUIPE);
+            return View(calendario);
         }
 
         // GET: Calendarios/Edit/5
