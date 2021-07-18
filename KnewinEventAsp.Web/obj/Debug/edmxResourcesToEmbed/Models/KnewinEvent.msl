@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KnewinEventoStoreContainer" CdmEntityContainer="KNEWIN_EVENTEntities">
+    <EntitySetMapping Name="CALENDARIO">
+      <EntityTypeMapping TypeName="KnewinEvento.CALENDARIO">
+        <MappingFragment StoreEntitySet="CALENDARIO">
+          <ScalarProperty Name="COD_CALENDARIO" ColumnName="COD_CALENDARIO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ATIVO" ColumnName="ATIVO" />
+          <ScalarProperty Name="COD_EQUIPE" ColumnName="COD_EQUIPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EQUIPE">
+      <EntityTypeMapping TypeName="KnewinEvento.EQUIPE">
+        <MappingFragment StoreEntitySet="EQUIPE">
+          <ScalarProperty Name="COD_EQUIPE" ColumnName="COD_EQUIPE" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ATIVO" ColumnName="ATIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVENTO">
+      <EntityTypeMapping TypeName="KnewinEvento.EVENTO">
+        <MappingFragment StoreEntitySet="EVENTO">
+          <ScalarProperty Name="COD_EVENTO" ColumnName="COD_EVENTO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ATIVO" ColumnName="ATIVO" />
+          <ScalarProperty Name="COD_CALENDARIO" ColumnName="COD_CALENDARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRESENCA">
+      <EntityTypeMapping TypeName="KnewinEvento.PRESENCA">
+        <MappingFragment StoreEntitySet="PRESENCA">
+          <ScalarProperty Name="COD_PRESENCA" ColumnName="COD_PRESENCA" />
+          <ScalarProperty Name="COD_EVENTO" ColumnName="COD_EVENTO" />
+          <ScalarProperty Name="COD_USUARIO" ColumnName="COD_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="KnewinEvento.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="COD_USUARIO" ColumnName="COD_USUARIO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="APELIDO" ColumnName="APELIDO" />
+          <ScalarProperty Name="SETOR" ColumnName="SETOR" />
+          <ScalarProperty Name="DDD" ColumnName="DDD" />
+          <ScalarProperty Name="TELEFONE" ColumnName="TELEFONE" />
+          <ScalarProperty Name="COD_EQUIPE" ColumnName="COD_EQUIPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

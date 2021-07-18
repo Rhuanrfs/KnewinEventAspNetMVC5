@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a56646364e764ee39f481c3b25daa7e2" Name="Diagram1">
+        <EntityTypeShape EntityType="KnewinEventModel.CALENDARIO" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnewinEventModel.EQUIPE" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnewinEventModel.EVENTO" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnewinEventModel.PRESENCA" Width="1.5" PointX="7.5" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnewinEventModel.USUARIO" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="KnewinEventModel.FK_CALENDARIO_EQUIPE" ManuallyRouted="false" />
+        <AssociationConnector Association="KnewinEventModel.FK_EVENTO_CALENDARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="KnewinEventModel.FK_USUARIO_EQUIPE" ManuallyRouted="false" />
+        <AssociationConnector Association="KnewinEventModel.FK_PRESENCA_EVENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="KnewinEventModel.FK_PRESENCA_USUARIO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

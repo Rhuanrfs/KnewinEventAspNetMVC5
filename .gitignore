@@ -3,15 +3,5 @@
 ################################################################################
 
 /.vs/
-/KnewinEventAsp.Api/bin
-/KnewinEventAsp.Api/obj
-/KnewinEventAsp.Model/bin
-/KnewinEventAsp.Model/obj
-/KnewinEventAsp.Service/bin
-/KnewinEventAsp.Service/obj
-/KnewinEventAsp.Repository/bin
-/KnewinEventAsp.Repository/obj
-
-
-/KnewinEventAsp.Web/bin
-/KnewinEventAsp.Web/obj
+/KnewinEventAspNetMvc5.Web/bin
+/KnewinEventAspNetMvc5.Web/obj/Debug
