@@ -3,15 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnewinEventAsp.Model", "KnewinEventAsp.Model\KnewinEventAsp.Model.csproj", "{2C4B8D68-C67E-4417-AB94-27BBF096CD4B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnewinEventAsp.Service", "KnewinEventAsp.Service\KnewinEventAsp.Service.csproj", "{D7A60E0C-D342-4C1B-B3A0-FE306B1F9D7B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnewinEventAsp.Api", "KnewinEventAsp.Api\KnewinEventAsp.Api.csproj", "{8F64E600-5DF3-4F95-8BA2-21292B4A1B22}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnewinEventAsp.Repository", "KnewinEventAsp.Repository\KnewinEventAsp.Repository.csproj", "{9D38051C-28C3-4551-BA90-029C7BC47D3D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnewinEventAsp.Web", "KnewinEventAsp.Web\KnewinEventAsp.Web.csproj", "{DD170461-5D4A-4313-A4A1-58F0D08F1281}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnewinEventAsp.Web", "KnewinEventAsp.Web\KnewinEventAsp.Web.csproj", "{65A65FF8-233E-41B5-B221-810506883165}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,26 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C4B8D68-C67E-4417-AB94-27BBF096CD4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C4B8D68-C67E-4417-AB94-27BBF096CD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C4B8D68-C67E-4417-AB94-27BBF096CD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C4B8D68-C67E-4417-AB94-27BBF096CD4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7A60E0C-D342-4C1B-B3A0-FE306B1F9D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7A60E0C-D342-4C1B-B3A0-FE306B1F9D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7A60E0C-D342-4C1B-B3A0-FE306B1F9D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7A60E0C-D342-4C1B-B3A0-FE306B1F9D7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F64E600-5DF3-4F95-8BA2-21292B4A1B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F64E600-5DF3-4F95-8BA2-21292B4A1B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F64E600-5DF3-4F95-8BA2-21292B4A1B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F64E600-5DF3-4F95-8BA2-21292B4A1B22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9D38051C-28C3-4551-BA90-029C7BC47D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D38051C-28C3-4551-BA90-029C7BC47D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D38051C-28C3-4551-BA90-029C7BC47D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D38051C-28C3-4551-BA90-029C7BC47D3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD170461-5D4A-4313-A4A1-58F0D08F1281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD170461-5D4A-4313-A4A1-58F0D08F1281}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD170461-5D4A-4313-A4A1-58F0D08F1281}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD170461-5D4A-4313-A4A1-58F0D08F1281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A65FF8-233E-41B5-B221-810506883165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A65FF8-233E-41B5-B221-810506883165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A65FF8-233E-41B5-B221-810506883165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A65FF8-233E-41B5-B221-810506883165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
